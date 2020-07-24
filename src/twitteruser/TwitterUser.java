@@ -1,4 +1,4 @@
-/*
+ /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -58,7 +58,7 @@ public class TwitterUser {
         
         int i;
         for (i=0;i<NOM;i++){
-            if(UP==arrLines[0]||UP==arrLines[1]||UP==arrLines[2]||UP==arrLines[3]||UP==arrLines[4]){
+            if(UP.equals(arrLines[0])||UP.equals(arrLines[1])||UP.equals(arrLines[2])||UP.equals(arrLines[3])||UP.equals(arrLines[4])){
                         do{
         System.out.println("Please enter your Date of birth(yyyy-mm-dd)");
         String dob = take.next();
@@ -117,7 +117,8 @@ public class TwitterUser {
 
             }
             else{
-                System.exit(1);
+                System.out.println("Login Denied,Please start app and try ");
+//                System.exit(1);
                         }
         }
 //        String joinUP = userName:password;
